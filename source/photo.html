@@ -39,12 +39,12 @@
       </p>
       <article class="photo-catalog__item">
         <span class="photo-catalog__panorama-mask">Панорама дня</span>
-        <img src="../img/panorama-photo.jpg" alt="Панорама дня" width="320" height="137">
+        <a class="photo-catalog__photo" href="#"></a>
         <blockquote class="photo-catalog__quote">
-          <h3 class="photo-catalog__author-name">
+          <h3 class="photo-catalog__author">
             Анна
           </h3>
-          <span class="photo-catalog__publication-time">
+          <span class="photo-catalog__time">
             (5 минут назад)
           </span>
           <p class="photo-catalog__text">
@@ -57,12 +57,12 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <img src="../img/auto-photo.jpg" alt="Съёмка автомобиля" width="280" height="180">
+        <a class="photo-catalog__photo" href="#"></a>
         <blockquote class="photo-catalog__quote">
-          <h3 class="photo-catalog__author-name">
+          <h3 class="photo-catalog__author">
             Левон
           </h3>
-          <span class="photo-catalog__publication-time">
+          <span class="photo-catalog__time">
             (5 часов назад)
           </span>
           <p class="photo-catalog__text">
@@ -75,12 +75,12 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <img src="../img/drum-photo.jpg" alt="Ударная установка" width="280" height="180">
+        <a class="photo-catalog__photo" href="#"></a>
         <blockquote class="photo-catalog__quote">
-          <h3 class="photo-catalog__author-name">
+          <h3 class="photo-catalog__author">
             Антон
           </h3>
-          <span class="photo-catalog__publication-time">
+          <span class="photo-catalog__time">
             (12 часов назад)
           </span>
           <p class="photo-catalog__text">
@@ -93,12 +93,12 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <img src="../img/glass-photo.jpg" alt="Стеклянный потолок" width="280" height="180">
+        <a class="photo-catalog__photo" href="#"></a>
         <blockquote class="photo-catalog__quote">
-          <h3 class="photo-catalog__author-name">
+          <h3 class="photo-catalog__author">
             Борис
           </h3>
-          <span class="photo-catalog__publication-time">
+          <span class="photo-catalog__time">
             (20 часов назад)
           </span>
           <p class="photo-catalog__text">
@@ -111,12 +111,12 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <img src="../img/melon-photo.jpg" alt="Кубанская бахча" width="280" height="180">
+        <a class="photo-catalog__photo" href="#"></a>
         <blockquote class="photo-catalog__quote">
-          <h3 class="photo-catalog__author-name">
+          <h3 class="photo-catalog__author">
             Сергей
           </h3>
-          <span class="photo-catalog__publication-time">
+          <span class="photo-catalog__time">
             (25 часов назад)
           </span>
           <p class="photo-catalog__text">
@@ -129,12 +129,12 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <img src="../img/mountain-photo.jpg" alt="Горный спуск" width="280" height="180">
+        <a class="photo-catalog__photo" href="#"></a>
         <blockquote class="photo-catalog__quote">
-          <h3 class="photo-catalog__author-name">
+          <h3 class="photo-catalog__author">
             Максим
           </h3>
-          <span class="photo-catalog__publication-time">
+          <span class="photo-catalog__time">
             (40 часов назад)
           </span>
           <p class="photo-catalog__text">
@@ -147,12 +147,12 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <img src="../img/airplane-photo.jpg" alt="Крыло самолёта" width="280" height="180">
+        <a class="photo-catalog__photo" href="#"></a>
         <blockquote class="photo-catalog__quote">
-          <h3 class="photo-catalog__author-name">
+          <h3 class="photo-catalog__author">
             Надежда
           </h3>
-          <span class="photo-catalog__publication-time">
+          <span class="photo-catalog__time">
             (45 часов назад)
           </span>
           <p class="photo-catalog__text">
@@ -171,23 +171,20 @@
         <br>
         Выкладывайте все, что накопилось в телефоне!
       </h2>
-      <div class="photo-post__photo-edit">
-        <form class="photo-post__form">
-          <img class="photo-post__photo" src="../img/road.jpg" alt="Зимняя дорога" width="280" height="374">
-          <div class="photo-post__editor-panel">
-            <!--у buttons не уверена в наименованиях классов-->
-            <button class="photo-post__crop editor-panel--active"></button>
-            <button class="photo-post__color"></button>
-            <button class="photo-post__contrast"></button>
-          </div>
-          <div class="photo-post__range-controls">
-            <span class="photo-post__bar"></span>
-            <span class="photo-post__range-toggle"></span>
-          </div>
-          <button class="photo-post__post button button--active" value="post">Запостить</button>
-          <button class="photo-post__cancel button" value="cancel">Отмена</button>
-        </form>
-      </div>
+      <form class="photo-post__form">
+        <img class="photo-post__photo" src="../img/road.jpg" alt="Зимняя дорога" width="280" height="374">
+        <div class="photo-post__editor-panel">
+          <button class="photo-post__crop photo-post__crop--active"></button>
+          <button class="photo-post__color"></button>
+          <button class="photo-post__contrast"></button>
+        </div>
+        <div class="photo-post__range-controls">
+          <span class="photo-post__bar"></span>
+          <span class="photo-post__range-toggle"></span>
+        </div>
+        <button class="photo-post__button button button--active" value="post">Запостить</button>
+        <button class="photo-post__button button button--disable" value="cancel">Отмена</button>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
