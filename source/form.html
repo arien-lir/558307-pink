@@ -12,8 +12,7 @@
       <img class="page-header__logo-image" src="../img/logo-white" alt="логотип PINK" width="75" height="22">
     </a>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">Открыть меню</button>
-      <button class="main-navigation__cross" type="button">Закрыть меню</button>
+      <button class="main-navigation__toggle" type="button">Кнопка открытия и закрытия меню</button>
       <ul class="main-navigation__list site-list">
         <li class="site-list__item">
           <a href="index.html">Главная</a>
@@ -41,7 +40,7 @@
     </section>
     <section class="competition-form">
       <form class="competition-form__form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="competition-form__fieldset">
+        <fieldset class="competition-form__fieldset">
           <p class="competition-form__name">
             <label for="surname-field">Фамилия:
               <input type="text"  name="surname" id="surname-field" placeholder="Укажите фамилию" required>
@@ -57,8 +56,8 @@
               <input type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
             <label>
           </p>
-        </div>
-        <div class="competition-form__fieldset">
+        </fieldset>
+        <fieldset class="competition-form__fieldset">
           <p class="competition-form__title">
             Ваши безбашенные достижения в путешествии
           </p>
@@ -115,8 +114,8 @@
                 <input type="email" name="email" id="email-field" placeholder="Введите почту" required>
               <label>
             </p>
-          </div>
-          <div class="competition-form__fieldset">
+          </fieldset>
+          <fieldset class="competition-form__fieldset">
             <p class="competition-form__title">
               С каким приложением путешествовали?
             </p>
@@ -141,21 +140,21 @@
                 Windows Phone
               </label>
             </p>
-          </div>
-          <div class="competition-form__fieldset">
-            <p class="competition-form__call-to-action">
-              Опишите свои эмоции
-            </p>
-            <p class="competition-form__emotions-comments">
-              <textarea name="comments" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
-          </div>
-          <p class="competition-form__form-submit">
-            <input type="submit" value="Отправить форму">
+        </fieldset>
+        <fieldset class="competition-form__fieldset">
+          <p class="competition-form__call-to-action">
+            Опишите свои эмоции
           </p>
-          <p class="competition-form__prompt">
-            <sup>*</sup> — обязательные поля
+          <p class="competition-form__emotions-comments">
+            <textarea name="comments" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
+        </fieldset>
+        <p class="competition-form__form-submit">
+          <input type="submit" value="Отправить форму">
+        </p>
+        <p class="competition-form__prompt">
+          <sup>*</sup> — обязательные поля
+        </p>
       </form>
     </section>
   </main>
