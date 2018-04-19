@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="../img/logo-white" alt="логотип PINK" width="75" height="22">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">Кнопка открытия и закрытия меню</button>
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="download">
+      <h2 class="visually-hidden">Ссылки для скачивания приложения</h2>
+      <a class="download__link download__link--default" href="https://www.apple.com/ru/itunes/">
+        Скачать приложение
+      </a>
+      <a class="download__link download__link--itunes" href="https://www.apple.com/ru/itunes/">
+        <span class="visually-hidden">Скачать приложение с iTunes</span>
+      </a>
+      <a class="download__link download__link--google-play" href="https://play.google.com/store/apps?hl=ru">
+        <span class="visually-hidden">Скачать приложение с Google Play</span>
+      </a>
+      <a class="download__link download__link--microsoft-store" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
+        <span class="visually-hidden">Скачать приложение с Microsoft Store</span>
+      </a>
+      <p class="download__text">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </section>
+    <section class="tagline">
+      <p class="tagline__intro">
+        Устали от серости мегаполиса?
+      </p>
+      <p class="tagline__intro">
+        Нам есть, что вам предложить!
+      </p>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--mood">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </li>
+        <li class="advantages__item advantages__item--change">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </li>
+        <li class="advantages__item advantages__item--friends">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
+      <img class="advantages__iphone-screen" src="iphone-screen" alt="Всем привет!" width="157" height="320">
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <h3 class="reviews__author-name">Николай Петров</h3>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <h3 class="reviews__author-name"></h3>
+            <p class="reviews__text"></p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <h3 class="reviews__author-name"></h3>
+            <p class="reviews__text"></p>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--active" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="tariff">
+      <div class="tariff-wrapper slider">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table class="tariff__list slider__list">
+          <tr>
+            <span class="tariff__hit">Хит</span>
+            <th class="tariff__name">Стандарт</th>
+            <th class="tariff__price">3,99 USD</th>
+          </tr>
+          <tr>
+            <td class="tariff__field">Розовый фильтр</td>
+            <td class="tariff__value">
+              <img src="../img/available.svg" alt="доступно" width="31" height="22">
+            </td>
+          </tr>
+          <tr>
+            <td class="tariff__field">Смайлики</td>
+            <td class="tariff__value">
+              <img src="../img/available.svg" alt="доступно" width="31" height="22">
+            </td>
+          </tr>
+          <tr>
+            <td class="tariff__field">Комментарии</td>
+            <td class="tariff__value">
+              <img src="../img/not-available.svg" alt="не доступно" width="27" height="27">
+            </td>
+          </tr>
+        </table>
+        <p class="tariff__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--active" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__call-to-action">
+      Остались вопросы? Свяжитесь с нами!
+    </div>
+    <div class="page-footer__contacts">
+      <p class="contacts__call-us">
+        Звоните:
+        <br>
+        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </p>
+      <p class="contacts__write-us">
+        Пишите:
+        <br>
+        <a class="contacts__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="contacts__come-to-us">
+        Приезжайте в гости:
+        <br> ул. Большая Конюшенная, 19/8
+      </p>
+    </div>
+    <div class="page-footer__map map">
+      <iframe></iframe>
+      <img class="map__marker" src="../img/map-marker.svg" alt="указатель" width="36" height="36">
+    </div>
+  </footer>
+</body>
+
 </html>
