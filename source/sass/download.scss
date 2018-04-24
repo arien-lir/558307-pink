@@ -1,0 +1,29 @@
+.download {
+  min-width: 318px;
+  background-color: $dark-blue;
+  font-family: $opensans;
+  color: #ffffff;
+  text-align: center;
+}
+.download__link--default {
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+}
+a.download__link {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+.download__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
+  padding-top: 26px;
+  padding-bottom: 34px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
