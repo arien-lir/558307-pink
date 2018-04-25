@@ -38,8 +38,10 @@
         <br> Видите, как не хватает ваших?
       </p>
       <article class="photo-catalog__item">
-        <span class="photo-catalog__panorama-mask">Панорама дня</span>
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper panorama-wrapper">
+          <span class="photo-catalog__panorama-mask">Панорама дня</span>
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Анна
@@ -57,7 +59,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Левон
@@ -75,7 +79,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Антон
@@ -93,7 +99,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Борис
@@ -111,7 +119,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Сергей
@@ -129,7 +139,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Максим
@@ -147,7 +159,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Надежда
@@ -172,18 +186,22 @@
         Выкладывайте все, что накопилось в телефоне!
       </h2>
       <form class="photo-post__form">
-        <img class="photo-post__photo" src="../img/road.jpg" alt="Зимняя дорога" width="280" height="374">
-        <div class="photo-post__editor-panel">
-          <button class="photo-post__crop photo-post__crop--active"></button>
-          <button class="photo-post__color"></button>
-          <button class="photo-post__contrast"></button>
+        <div class="photo-post__wrapper">
+          <img class="photo-post__photo" src="../img/road.jpg" alt="Зимняя дорога" width="280" height="374">
+          <div class="photo-post__editor-panel">
+            <button class="photo-post__crop photo-post__crop--active"></button>
+            <button class="photo-post__color"></button>
+            <button class="photo-post__contrast"></button>
+          </div>
+          <div class="photo-post__range-controls">
+            <span class="photo-post__bar"></span>
+            <span class="photo-post__range-toggle"></span>
+          </div>
         </div>
-        <div class="photo-post__range-controls">
-          <span class="photo-post__bar"></span>
-          <span class="photo-post__range-toggle"></span>
+        <div class="photo-post__button-wrapper">
+          <button class="photo-post__button round-button--rose button--active" type="submit">Запостить</button>
+          <button class="photo-post__button round-button--gray button--disable" type="submit">Отмена</button>
         </div>
-        <button class="photo-post__button button button--active" value="post">Запостить</button>
-        <button class="photo-post__button button button--disable" value="cancel">Отмена</button>
       </form>
     </section>
   </main>

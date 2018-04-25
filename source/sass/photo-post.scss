@@ -1,0 +1,58 @@
+.photo-post {
+  min-width: 100%;
+  background-color: #ffffff;
+  font-family: $opensans;
+  text-align: center;
+}
+.photo-post__call-to-action {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: lighter;
+  color: #283645;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 49px;
+}
+.photo-post__wrapper {
+  width: 280px;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  background-color: #f2f2f2;
+}
+.photo-post__photo {
+  width: 280px;
+  min-height: 374px;
+}
+.photo-post__button-wrapper {
+  background-color: #f2f2f2;
+  border-top: 1px solid #dddfe0;
+  padding-top: 38px;
+  padding-bottom: 29px;
+  text-align: center;
+}
+.round-button--rose {
+  border: 3px solid #d22856;
+  border-radius: 30px;
+  width: 280px;
+  height: 55px;
+  background-color: #f2f2f2;
+  font-family: $opensans;
+  color: #d22856;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.round-button--gray {
+  border: 3px solid #dddfe0;
+  border-radius: 30px;
+  width: 280px;
+  height: 55px;
+  background-color: #f2f2f2;
+  font-family: $opensans;
+  color: #dddfe0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
