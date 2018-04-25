@@ -1,0 +1,32 @@
+.pop-up {
+  min-width: 100%;
+  background-color: #ffffff;
+  font-family: $opensans;
+  text-align: center;
+}
+.pop-up__failure {
+  padding-top: 43px;
+  padding-bottom: 50px;
+}
+.pop-up__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+}
+.pop-up__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: $dark-blue;
+  padding-bottom: 42px;
+}
+.pop-up__button-close {
+  background-color: #f2f2f2;
+  padding-top: 48px;
+  padding-bottom: 52px;
+  box-shadow: 0 25px 20px -15px #e1e1e1;
+}

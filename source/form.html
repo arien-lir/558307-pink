@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="page-header page-header--inner">
+  <header class="page-header">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="../img/logo-white" alt="логотип PINK" width="75" height="22">
     </a>
@@ -41,27 +41,27 @@
     </section>
     <section class="competition-form">
       <form class="competition-form__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="competition-form__fieldset">
-          <p class="competition-form__name">
+        <fieldset class="competition-form__fieldset fieldset--white">
+          <p class="competition-form__personal-info">
             <label for="surname-field">Фамилия:
               <input type="text"  name="surname" id="surname-field" placeholder="Укажите фамилию" required>
             <label>
           </p>
-          <p class="competition-form__name">
+          <p class="competition-form__personal-info">
             <label for="name-field">Имя:
               <input type="text" name="name" id="name-field" placeholder="Введите ваше имя" required>
             <label>
           </p>
-          <p class="competition-form__name">
+          <p class="competition-form__personal-info">
             <label for="patronymic-field">Отчество:
               <input type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
             <label>
           </p>
         </fieldset>
-        <fieldset class="competition-form__fieldset">
-          <p class="competition-form__title">
+        <fieldset class="competition-form__fieldset fieldset--gray">
+          <h3 class="competition-form__title">
             Ваши безбашенные достижения в путешествии
-          </p>
+          </h3>
           <p class="competition-form__checkbox-item">
             <label for="shark">
               <input class="visually-hidden" name="shark" type="checkbox" id="shark" checked>
@@ -104,57 +104,58 @@
               Разгромил отель
             </label>
           </p>
-          <div class="competition-form__contacts">
-            <p class="competition-form__contact">
-              <label for="phone-field">Номер телефона
+        </fieldset>
+        <fieldset class="competition-form__fieldset fieldset--white">
+          <p class="competition-form__personal-info">
+            <label for="phone-field">Номер телефона
                 <input type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
               <label>
             </p>
-            <p class="competition-form__contact">
+            <p class="competition-form__personal-info">
               <label for="email-field">Адрес почты
                 <input type="email" name="email" id="email-field" placeholder="Введите почту" required>
               <label>
             </p>
           </fieldset>
           <fieldset class="competition-form__fieldset">
-            <p class="competition-form__title">
+            <h3 class="competition-form__title">
               С каким приложением путешествовали?
-            </p>
+            </h3>
             <p class="competition-form__app">
               <label for="app-ios-radiobutton">
                 <input class="visually-hidden" name="app-ios" type="radio" id="app-ios-radiobutton" value="app-ios" checked>
                 <span class="visually-hidden">Отмечено</span>
                 Pink для iOS
               </label>
-            </p>
-            <p class="competition-form__app">
-              <label for="app-android-radiobutton">
+          </p>
+          <p class="competition-form__app">
+            <label for="app-android-radiobutton">
                 <input class="visually-hidden" name="app-android" type="radio" id="app-android-radiobutton" value="app-android">
                 <span class="visually-hidden">Не отмечено</span>
                 Pink на Android
               </label>
-            </p>
-            <p class="competition-form__app">
-              <label for="app-windows-radiobutton">
+          </p>
+          <p class="competition-form__app">
+            <label for="app-windows-radiobutton">
                 <input class="visually-hidden" name="app-windows" type="radio" id="app-windows-radiobutton" value="app-windows">
                 <span class="visually-hidden">Не отмечено</span>
                 Windows Phone
               </label>
-            </p>
+          </p>
         </fieldset>
         <fieldset class="competition-form__fieldset">
-          <p class="competition-form__call-to-action">
+          <h3 class="competition-form__call-to-action">
             Опишите свои эмоции
-          </p>
+          </h3>
           <p class="competition-form__emotions-comments">
             <textarea name="comments" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
         </fieldset>
-        <p class="competition-form__form-submit">
-          <input type="submit" value="Отправить форму">
-        </p>
+        <button class="competition-form__submit button" type="submit">
+          Отправить форму
+        </button>
         <p class="competition-form__prompt">
-          <sup>*</sup> — обязательные поля
+          <span><sup>*</sup></span> — обязательные поля
         </p>
       </form>
     </section>
@@ -166,7 +167,7 @@
         <p class="pop-up__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <button class="pop-up__button">
+        <button class="pop-up__button button">
           ОК
         </button>
       </div>
@@ -178,7 +179,7 @@
         Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
       </p>
       <div class="pop-up__button-close">
-        <button class="pop-up__button">
+        <button class="pop-up__button button">
             Закрыть окно
           </button>
       </div>
@@ -210,7 +211,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
       </a>
     </div>

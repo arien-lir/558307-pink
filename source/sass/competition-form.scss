@@ -1,0 +1,89 @@
+.competition-form {
+  min-width: 100%;
+  font-family: $opensans;
+  text-align: center;
+}
+.fieldset {
+  border: 0 #ffffff;
+}
+.competition-form__personal-info {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  padding-left: 43px;
+  text-align: left;
+}
+.fieldset--white {
+  background-color: #ffffff;
+}
+.fieldset--gray {
+  background-color: #f2f2f2;
+}
+.competition-form__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.competition-form__checkbox-item {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding-bottom: 63px;
+  text-align: left;
+}
+.competition-form__app {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding-bottom: 63px;
+  text-align: left;
+}
+.competition-form__call-to-action {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 17px;
+}
+.button {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+  height: 63px;
+  width: 280px;
+  cursor: pointer;
+}
+.competition-form__submit {
+  margin-top: 48px;
+  text-align: center;
+}
+.competition-form__prompt {
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 43px;
+  padding-bottom: 61px;
+}
+.competition-form__prompt span {
+  color: #d22856;
+}
