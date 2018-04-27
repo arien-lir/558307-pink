@@ -35,7 +35,7 @@
     <div class="cover"></div>
     <section class="download">
       <h2 class="visually-hidden">Ссылки для скачивания приложения</h2>
-      <a class="download__link round-button" href="https://www.apple.com/ru/itunes/">
+      <a class="download__link button" href="https://www.apple.com/ru/itunes/">
         Скачать приложение
       </a>
       <a class="download__link download__link--itunes" href="https://www.apple.com/ru/itunes/">
@@ -110,7 +110,7 @@
       </div>
     </section>
     <section class="tariff">
-      <div class="tariff-wrapper slider">
+      <div class="tariff__wrapper slider">
         <h2 class="visually-hidden">Тарифы</h2>
         <table class="tariff__list slider__list">
           <tr>
@@ -143,35 +143,36 @@
       </div>
     </section>
   </main>
-  <footer class="main-page-footer">
-    <p class="main-page-footer__call-to-action">
+  <section class="contacts">
+    <p class="contacts__call-to-action">
       Остались вопросы? Свяжитесь с нами!
     </p>
-      <p class="main-page-footer__contacts">
+      <p class="contacts__info">
         Звоните:
         <br>
-        <a class="contacts" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <a class="contact-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <!-- contact-info является отдельной сущностью, которую надо выносить в отдельный БЭМ-блок? -->
       </p>
-      <p class="main-page-footer__contacts">
+      <p class="contacts__info">
         Пишите:
         <br>
-        <a class="contacts" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="contact-info" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
-      <p class="main-page-footer__contacts">
+      <p class="contacts__info">
         Приезжайте в гости:
         <br>
-        <span class="contacts">
+        <span class="contact-info">
           ул. Большая
           <br>
           Конюшенная, 19/8
         </span>
               </p>
-              <div class="main-page-footer__map map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.318705933540848!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524575645298"
-                  style="border:0" allowfullscreen></iframe>
-                <img class="map__marker" src="../img/map-marker.svg" alt="указатель" width="36" height="36">
-              </div>
-              </footer>
+    </section>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.318705933540848!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524575645298"
+        style="border:0" allowfullscreen></iframe>
+      <img class="map__marker" src="../img/map-marker.svg" alt="указатель" width="36" height="36">
+    </section>
 </body>
 
 </html>

@@ -3,8 +3,13 @@
   font-family: $opensans;
   text-align: center;
 }
-.fieldset {
+.competition-form__fieldset:nth-child(odd) {
+  background-color: #ffffff;
   border: 0 #ffffff;
+}
+.competition-form__fieldset:nth-child(even) {
+  background-color: #f2f2f2;
+  border: 0 #f2f2f2;
 }
 .competition-form__personal-info {
   font-size: 14px;
@@ -13,12 +18,6 @@
   text-transform: uppercase;
   padding-left: 43px;
   text-align: left;
-}
-.fieldset--white {
-  background-color: #ffffff;
-}
-.fieldset--gray {
-  background-color: #f2f2f2;
 }
 .competition-form__title {
   font-size: 14px;
@@ -57,18 +56,6 @@
   padding: 0;
   padding-top: 40px;
   padding-bottom: 17px;
-}
-.button {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 2px solid #2aab6d;
-  background-color: #2aab6d;
-  height: 63px;
-  width: 280px;
-  cursor: pointer;
 }
 .competition-form__submit {
   margin-top: 48px;

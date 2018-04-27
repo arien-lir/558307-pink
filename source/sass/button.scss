@@ -1,0 +1,37 @@
+.button {
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 30px;
+  width: 280px;
+  height: 55px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button--square {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+  height: 63px;
+  width: 280px;
+}
+.button--active {
+  border-color: #d22856;
+  font-family: $opensans;
+  color: #d22856;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.button--disable {
+  border-color: #dddfe0;
+  font-family: $opensans;
+  color: #dddfe0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}

@@ -1,9 +1,9 @@
-.main-page-footer {
+.contacts {
   min-width: 318px;
   background-color: #ffffff;
   font-family: $opensans;
 }
-.main-page-footer__call-to-action {
+.contacts__call-to-action {
   color: $dark-blue;
   text-transform: uppercase;
   font-size: 24px;
@@ -14,14 +14,14 @@
   margin-right: 50px;
   text-align: center;
 }
-.main-page-footer__contacts {
+.contacts__info {
   color: $dark-blue;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 23px;
   text-align: center;
 }
-.contacts {
+.contact-info {
   color: #d22856;
   font-size: 24px;
   font-weight: lighter;

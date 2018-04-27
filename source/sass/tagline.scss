@@ -1,12 +1,14 @@
-.tagline__intro {
+.tagline {
   min-width: 100%;
   background-color: #ffffff;
   font-family: $opensans;
   font-size: 24px;
   color: $dark-blue;
   text-align: center;
-  margin-bottom: 32px;
+  padding-top: 43px;
 }
-.tagline__intro--question {
-  margin-top: 43px;
+.tagline__intro {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
 }
