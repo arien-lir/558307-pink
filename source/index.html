@@ -16,20 +16,22 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">Кнопка открытия и закрытия меню</button>
-      <ul class="main-navigation__list site-list">
-        <li class="site-list__item">
-          <a>Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -151,18 +153,18 @@
       <p class="contacts__info">
         Звоните:
         <br>
-        <a class="contact-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
         <!-- contact-info является отдельной сущностью, которую надо выносить в отдельный БЭМ-блок? -->
       </p>
       <p class="contacts__info">
         Пишите:
         <br>
-        <a class="contact-info" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="contacts__info" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="contacts__info">
         Приезжайте в гости:
         <br>
-        <span class="contact-info">
+        <span class="contacts__info">
           ул. Большая
           <br>
           Конюшенная, 19/8
