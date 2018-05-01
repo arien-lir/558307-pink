@@ -35,3 +35,17 @@
   line-height: 18px;
   font-weight: bold;
 }
+a.button {
+  margin-top: 28px;
+  padding-top: 17px;
+}
+@media (min-width: $tablet-width) {
+  a.button {
+    margin-top: 31px;
+  }
+}
+@media (min-width: $desktop-width) {
+  a.button {
+    margin-top: 54px;
+  }
+}

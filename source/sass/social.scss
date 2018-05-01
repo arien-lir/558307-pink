@@ -1,4 +1,9 @@
 .social {
-  padding-top: 40px;
   padding-bottom: 47px;
+}
+@media (min-width: $tablet-width) {
+  .social__list {
+    display: flex;
+    flex-direction: row;
+  }
 }
