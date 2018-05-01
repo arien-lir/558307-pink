@@ -1,5 +1,5 @@
 .tariff {
-  min-width: 100%;
+  min-width: 320px;
   background-color: #f2f2f2;
   font-family: $opensans;
   text-transform: uppercase;
@@ -16,9 +16,13 @@
   line-height: 30px;
   font-weight: bold;
   padding-top: 23px;
-  padding-bottom: 18px;
+  padding-bottom: 8px;
   padding-left: 88px;
   padding-right: 88px;
+  border-spacing: 0;
+}
+th.tariff__name {
+  border: none;
 }
 .tariff__price {
   background-color: $dark-blue;
@@ -26,7 +30,9 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: lighter;
-  padding-top: 8px;
+  padding-top: 0;
+  padding-bottom: 13px;
+  border-spacing: 0;
 }
 .tariff__field {
   background-color: #ffffff;
@@ -41,4 +47,23 @@
 .tariff__value {
   background-color: #ffffff;
   color: $dark-blue;
+}
+.tariff__full-list {
+  display: none;
+}
+@media (min-width: $tablet-width) {
+  .tariff {
+    min-width: 660px;
+  }
+  .tariff__full-list {
+    display: block;
+  }
+  .tariff__list {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .tariff {
+    min-width: 1200px;
+  }
 }

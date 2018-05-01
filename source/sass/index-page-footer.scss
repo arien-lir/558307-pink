@@ -1,0 +1,28 @@
+.index-page-footer {
+  display: none;
+}
+@media (min-width: $tablet-width) {
+  .index-page-footer {
+    min-width: 660px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .index-page-footer .page-footer__logo {
+    padding-left: 20px;
+  }
+  .index-page-footer .copyright__link {
+    padding-right: 20px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .index-page-footer {
+    min-width: 1200px;
+  }
+  .index-page-footer .page-footer__logo {
+    padding-left: 130px;
+  }
+  .index-page-footer .copyright__link {
+    padding-right: 130px;
+  }
+}
