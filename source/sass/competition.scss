@@ -1,0 +1,30 @@
+.competition__title {
+  min-width: 100%;
+  min-height: 237px;
+  background-image: url("../img/inner-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $dark-blue;
+  color: #ffffff;
+  font-family: $opensans;
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  padding-top: 99px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+.competition__description {
+  min-width: 100%;
+  background-color: #ffffff;
+  font-family: $opensans;
+  color: $dark-blue;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: lighter;
+  padding-top: 52px;
+  padding-bottom: 49px;
+  text-align: center;
+}

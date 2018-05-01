@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,31 +16,34 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">Кнопка открытия и закрытия меню</button>
-      <ul class="main-navigation__list site-list">
-        <li class="site-list__item">
-          <a>Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="page-main">
+    <div class="cover"></div>
     <section class="download">
       <h2 class="visually-hidden">Ссылки для скачивания приложения</h2>
-      <a class="download__link download__link--default" href="https://www.apple.com/ru/itunes/">
+      <a class="download__link button" href="https://www.apple.com/ru/itunes/">
         Скачать приложение
       </a>
       <a class="download__link download__link--itunes" href="https://www.apple.com/ru/itunes/">
         <span class="visually-hidden">Скачать приложение с iTunes</span>
-      </a>
+    </a>
       <a class="download__link download__link--google-play" href="https://play.google.com/store/apps?hl=ru">
         <span class="visually-hidden">Скачать приложение с Google Play</span>
       </a>
@@ -49,10 +55,10 @@
       </p>
     </section>
     <section class="tagline">
-      <p class="tagline__intro">
+      <p class="tagline__intro tagline__intro--question">
         Устали от серости мегаполиса?
       </p>
-      <p class="tagline__intro">
+      <p class="tagline__intro tagline__intro--answer">
         Нам есть, что вам предложить!
       </p>
     </section>
@@ -85,17 +91,17 @@
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
-            <h3 class="reviews__author-name">Николай Петров</h3>
+            <h3 class="reviews__author">Николай Петров</h3>
             <p class="reviews__text">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </blockquote>
           <blockquote class="reviews__item slider__item">
-            <h3 class="reviews__author-name"></h3>
+            <h3 class="reviews__author"></h3>
             <p class="reviews__text"></p>
           </blockquote>
           <blockquote class="reviews__item slider__item">
-            <h3 class="reviews__author-name"></h3>
+            <h3 class="reviews__author"></h3>
             <p class="reviews__text"></p>
           </blockquote>
         </div>
@@ -107,30 +113,28 @@
       </div>
     </section>
     <section class="tariff">
-      <div class="tariff-wrapper slider">
+      <div class="tariff__wrapper slider">
         <h2 class="visually-hidden">Тарифы</h2>
         <table class="tariff__list slider__list">
           <tr>
             <span class="tariff__hit">Хит</span>
-            <th class="tariff__name">Стандарт</th>
-            <th class="tariff__price">3,99 USD</th>
+            <th class="tariff__name" colspan="2" align="center">Стандарт
+              <span class="tariff__price">3,99 USD<span>
+            </th>
           </tr>
           <tr>
-            <td class="tariff__field">Розовый фильтр</td>
-            <td class="tariff__value">
-              <img src="../img/available.svg" alt="доступно" width="31" height="22">
+            <td class="tariff__field" colspan="2">Розовый фильтр
+              <img class="tariff__value" src="../img/available.svg" alt="доступно" width="31" height="22">
             </td>
           </tr>
           <tr>
-            <td class="tariff__field">Смайлики</td>
-            <td class="tariff__value">
-              <img src="../img/available.svg" alt="доступно" width="31" height="22">
+            <td class="tariff__field" colspan="2">Смайлики
+              <img class="tariff__value" src="../img/available.svg" alt="доступно" width="31" height="22">
             </td>
           </tr>
           <tr>
-            <td class="tariff__field">Комментарии</td>
-            <td class="tariff__value">
-              <img src="../img/not-available.svg" alt="не доступно" width="27" height="27">
+            <td class="tariff__field" colspan="2">Комментарии
+              <img class="tariff__value" src="../img/not-available.svg" alt="не доступно" width="27" height="27">
             </td>
           </tr>
         </table>
@@ -142,31 +146,36 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__call-to-action">
+  <section class="contacts">
+    <p class="contacts__call-to-action">
       Остались вопросы? Свяжитесь с нами!
-    </div>
-    <div class="page-footer__contacts">
-      <p class="contacts__call-us">
+    </p>
+      <p class="contacts__info">
         Звоните:
         <br>
-        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <!-- contact-info является отдельной сущностью, которую надо выносить в отдельный БЭМ-блок? -->
       </p>
-      <p class="contacts__write-us">
+      <p class="contacts__info">
         Пишите:
         <br>
-        <a class="contacts__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="contacts__info" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
-      <p class="contacts__come-to-us">
+      <p class="contacts__info">
         Приезжайте в гости:
-        <br> ул. Большая Конюшенная, 19/8
-      </p>
-    </div>
-    <div class="page-footer__map map">
-      <iframe></iframe>
+        <br>
+        <span class="contacts__info">
+          ул. Большая
+          <br>
+          Конюшенная, 19/8
+        </span>
+              </p>
+    </section>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.318705933540848!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524575645298"
+        style="border:0" allowfullscreen></iframe>
       <img class="map__marker" src="../img/map-marker.svg" alt="указатель" width="36" height="36">
-    </div>
-  </footer>
+    </section>
 </body>
 
 </html>

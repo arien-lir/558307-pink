@@ -1,0 +1,76 @@
+.competition-form {
+  min-width: 100%;
+  font-family: $opensans;
+  text-align: center;
+}
+.competition-form__fieldset:nth-child(odd) {
+  background-color: #ffffff;
+  border: 0 #ffffff;
+}
+.competition-form__fieldset:nth-child(even) {
+  background-color: #f2f2f2;
+  border: 0 #f2f2f2;
+}
+.competition-form__info {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  padding-left: 43px;
+  text-align: left;
+}
+.competition-form__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.competition-form__checkbox-item {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding-bottom: 63px;
+  text-align: left;
+}
+.competition-form__app {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding-bottom: 63px;
+  text-align: left;
+}
+.competition-form__call-to-action {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 17px;
+}
+.competition-form__submit {
+  margin-top: 48px;
+  text-align: center;
+}
+.competition-form__prompt {
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 43px;
+  padding-bottom: 21px;
+}
+.competition-form__prompt span {
+  color: #d22856;
+}

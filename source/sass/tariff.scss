@@ -1,0 +1,44 @@
+.tariff {
+  min-width: 100%;
+  background-color: #f2f2f2;
+  font-family: $opensans;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tariff__wrapper {
+  margin-top: 67px;
+  margin-bottom: 46px;
+}
+.tariff__name {
+  background-color: $dark-blue;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-top: 23px;
+  padding-bottom: 18px;
+  padding-left: 88px;
+  padding-right: 88px;
+}
+.tariff__price {
+  background-color: $dark-blue;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  padding-top: 8px;
+}
+.tariff__field {
+  background-color: #ffffff;
+  color: $dark-blue;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: lighter;
+  padding-top: 23px;
+  padding-bottom: 21px;
+  padding-left: 22px;
+}
+.tariff__value {
+  background-color: #ffffff;
+  color: $dark-blue;
+}

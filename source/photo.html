@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Фотографии Пинк</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,8 +15,7 @@
       <img class="page-header__logo-image" src="../img/logo-white" alt="логотип PINK" width="75" height="22">
     </a>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">Открыть меню</button>
-      <button class="main-navigation__cross" type="button">Закрыть меню</button>
+      <button class="main-navigation__toggle" type="button">Кнопка открытия и закрытия меню</button>
       <ul class="main-navigation__list site-list">
         <li class="site-list__item">
           <a href="index.html">Главная</a>
@@ -38,8 +40,10 @@
         <br> Видите, как не хватает ваших?
       </p>
       <article class="photo-catalog__item">
-        <span class="photo-catalog__panorama-mask">Панорама дня</span>
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper panorama-wrapper">
+          <span class="photo-catalog__panorama-mask">Панорама дня</span>
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Анна
@@ -57,7 +61,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Левон
@@ -75,7 +81,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Антон
@@ -93,7 +101,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Борис
@@ -111,7 +121,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Сергей
@@ -129,7 +141,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Максим
@@ -147,7 +161,9 @@
         </blockquote>
       </article>
       <article class="photo-catalog__item">
-        <a class="photo-catalog__photo" href="#"></a>
+        <div class="photo-catalog__wrapper">
+          <a class="photo-catalog__photo" href="#"></a>
+        </div>
         <blockquote class="photo-catalog__quote">
           <h3 class="photo-catalog__author">
             Надежда
@@ -172,18 +188,22 @@
         Выкладывайте все, что накопилось в телефоне!
       </h2>
       <form class="photo-post__form">
-        <img class="photo-post__photo" src="../img/road.jpg" alt="Зимняя дорога" width="280" height="374">
-        <div class="photo-post__editor-panel">
-          <button class="photo-post__crop photo-post__crop--active"></button>
-          <button class="photo-post__color"></button>
-          <button class="photo-post__contrast"></button>
+        <div class="photo-post__wrapper">
+          <img class="photo-post__photo" src="../img/road.jpg" alt="Зимняя дорога" width="280" height="374">
+          <div class="photo-post__editor-panel">
+            <button class="photo-post__crop photo-post__crop--active"></button>
+            <button class="photo-post__color"></button>
+            <button class="photo-post__contrast"></button>
+          </div>
+          <div class="photo-post__range-controls">
+            <span class="photo-post__bar"></span>
+            <span class="photo-post__range-toggle"></span>
+          </div>
         </div>
-        <div class="photo-post__range-controls">
-          <span class="photo-post__bar"></span>
-          <span class="photo-post__range-toggle"></span>
+        <div class="photo-post__button-wrapper">
+          <button class="photo-post__button button button--active" type="submit">Запостить</button>
+          <button class="photo-post__button button button--disable" type="submit">Отмена</button>
         </div>
-        <button class="photo-post__button button button--active" value="post">Запостить</button>
-        <button class="photo-post__button button button--disable" value="cancel">Отмена</button>
       </form>
     </section>
   </main>
@@ -199,21 +219,21 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
-            <span class="visually-hidden">Мы в Facebook</span>
+          <a class=" social__link social__link--facebook " href="# ">
+            <span class="visually-hidden ">Мы в Facebook</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">Мы на Youtube</span>
+        <li class="social__item ">
+          <a class="social__link social__link--youtube " href="# ">
+            <span class="visually-hidden ">Мы на Youtube</span>
           </a>
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
-      <span class="copyright__text">Разработано</span>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">HTML Academy</span>
+    <div class="page-footer__copyright copyright ">
+      <span class="copyright__text ">Разработано</span>
+      <a class="copyright__link " href="https://htmlacademy.ru/intensive/adaptive ">
+        <span class="visually-hidden ">HTML Academy</span>
       </a>
     </div>
   </footer>
