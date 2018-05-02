@@ -1,7 +1,11 @@
 .competition-form {
-  min-width: 100%;
+  min-width: 320px;
   font-family: $opensans;
   text-align: center;
+}
+.competition-form__form {
+  display: flex;
+  flex-direction: column;
 }
 .competition-form__fieldset:nth-child(odd) {
   background-color: #ffffff;
@@ -73,4 +77,62 @@
 }
 .competition-form__prompt span {
   color: #d22856;
+}
+.competition-form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: $tablet-width) {
+  .competition-form {
+    min-width: 660px;
+  }
+  .competition-form__fieldset:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  .competition-form__fieldset:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .competition-form__fieldset:first-child {
+    order: 1;
+  }
+  .competition-form__fieldset:nth-child(2) {
+    order: 4;
+  }
+  .competition-form__fieldset:nth-child(3) {
+    order: 3;
+  }
+  .competition-form__fieldset:nth-child(4) {
+    order: 2;
+  }
+  .competition-form__fieldset:nth-child(5) {
+    order: 5;
+  }
+  .competition-form__wrapper {
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-width) {
+  .competition-form {
+    min-width: 1200px;
+  }
+  .competition-form__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .competition-form__fieldset:nth-child(3),
+  .competition-form__fieldset:nth-child(2),
+  .competition-form__fieldset:nth-child(5) {
+    width: 938px;
+    flex-grow: 1;
+  }
+  .competition-form__fieldset:first-child,
+  .competition-form__fieldset:nth-child(4) {
+    width: 440px;
+    flex-grow: 1;
+  }
+  .competition-form__wrapper {
+    flex-grow: 1;
+  }
 }

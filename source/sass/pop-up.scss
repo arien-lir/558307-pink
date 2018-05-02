@@ -1,5 +1,5 @@
 .pop-up {
-  min-width: 100%;
+  min-width: 320px;
   background-color: #ffffff;
   font-family: $opensans;
   text-align: center;
@@ -29,4 +29,22 @@
   padding-top: 48px;
   padding-bottom: 52px;
   box-shadow: 0 25px 20px -15px #e1e1e1;
+}
+.pop-up__wrapper--ok {
+  background-color: #ffffff;
+  box-shadow: 0 25px 20px -15px #e1e1e1;
+}
+@media (min-width: $tablet-width) {
+  .pop-up__failure,
+  .pop-up__success,
+  .pop-up__wrapper {
+    width: 460px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .pop-up__failure,
+  .pop-up__success,
+  .pop-up__wrapper {
+    width: 780px;
+  }
 }
