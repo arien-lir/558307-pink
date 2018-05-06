@@ -30,7 +30,7 @@ p.competition__description {
   padding-right: 25px;
   text-align: center;
 }
-.competition__full-description {
+.competition__description span {
   display: none;
   padding: 0;
   margin: 0;
@@ -41,22 +41,15 @@ p.competition__description {
     padding-left: 90px;
     padding-right: 90px;
   }
-  .competition__description {
-    display: none;
-  }
-  p.competition__full-description {
-    display: block;
-    background-color: #ffffff;
-    font-family: $opensans;
-    color: $dark-blue;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: lighter;
+  p.competition__description {
     padding-top: 97px;
     padding-bottom: 76px;
     padding-left: 86px;
     padding-right: 86px;
     text-align: center;
+  }
+  .competition__description span {
+    display: inline-block;
   }
 }
 @media (min-width: $desktop-width) {
@@ -65,7 +58,7 @@ p.competition__description {
     padding-left: 225px;
     padding-right: 225px;
   }
-  p.competition__full-description {
+  p.competition__description {
     padding-left: 220px;
     padding-right: 220px;
   }
