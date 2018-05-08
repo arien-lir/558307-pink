@@ -9,7 +9,7 @@
   font-family: $opensans;
   font-size: 24px;
   font-weight: lighter;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 99px;
   padding-bottom: 55px;
@@ -55,6 +55,7 @@ p.competition__description {
 @media (min-width: $desktop-width) {
   .competition__title {
     min-width: 1200px;
+    max-width: 1200px;
     padding-left: 225px;
     padding-right: 225px;
   }

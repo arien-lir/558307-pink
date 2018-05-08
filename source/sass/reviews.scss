@@ -6,6 +6,7 @@
   padding-left: 21px;
   padding-right: 21px;
   padding-bottom: 42px;
+  margin: 0 auto;
   text-align: center;
 }
 .reviews__author {
@@ -56,6 +57,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     min-width: 1200px;
+    max-width: 1200px;
   }
   .reviews__details {
     padding-top: 8px;

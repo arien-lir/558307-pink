@@ -1,14 +1,10 @@
 .main-navigation {
   min-width: 320px;
-  font-family: $opensans;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: bold;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .main-navigation__list {
   margin: 0;
@@ -23,15 +19,11 @@
 }
 @media (min-width: $desktop-width) {
   .main-navigation {
-    min-width: 1200px;
+    width: 790px;
   }
   .main-navigation__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 130px;
-  }
-  .main-navigation__list li {
-    padding-right: 82px;
   }
 }

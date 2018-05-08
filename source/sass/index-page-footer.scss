@@ -1,5 +1,6 @@
 .index-page-footer {
   display: none;
+  margin: 0 auto;
 }
 @media (min-width: $tablet-width) {
   .index-page-footer {
@@ -18,6 +19,7 @@
 @media (min-width: $desktop-width) {
   .index-page-footer {
     min-width: 1200px;
+    max-width: 1200px;
   }
   .index-page-footer .page-footer__logo {
     padding-left: 130px;

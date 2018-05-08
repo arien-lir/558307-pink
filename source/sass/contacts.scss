@@ -2,6 +2,7 @@
   min-width: 320px;
   background-color: #ffffff;
   font-family: $opensans;
+  margin: 0 auto;
 }
 .contacts__wrapper {
   display: flex;
@@ -49,6 +50,7 @@ span.contacts__info {
 @media (min-width: $desktop-width) {
   .contacts {
     min-width: 1200px;
+    max-width: 1200px;
   }
   .contacts__info {
     width: 400px;

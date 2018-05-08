@@ -4,6 +4,7 @@
   font-family: $opensans;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
 }
 .tariff__wrapper {
   margin-top: 67px;
@@ -65,5 +66,6 @@ th.tariff__name {
 @media (min-width: $desktop-width) {
   .tariff {
     min-width: 1200px;
+    max-width: 1200px;
   }
 }

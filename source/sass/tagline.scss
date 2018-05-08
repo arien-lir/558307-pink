@@ -1,14 +1,26 @@
 .tagline {
-  min-width: 100%;
+  min-width: 320px;
   background-color: #ffffff;
   font-family: $opensans;
   font-size: 24px;
   color: $dark-blue;
   text-align: center;
   padding-top: 43px;
+  margin: 0 auto;
 }
 .tagline__intro {
   margin: 0;
   padding: 0;
   padding-bottom: 32px;
+}
+@media (min-width: $tablet-width) {
+  .tagline {
+    min-width: 660px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .tagline {
+    min-width: 1200px;
+    max-width: 1200px;
+  }
 }

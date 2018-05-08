@@ -1,8 +1,9 @@
 .pop-up {
-  min-width: 320px;
+  width: 320px;
   background-color: #ffffff;
   font-family: $opensans;
   text-align: center;
+  margin: 0 auto;
 }
 .pop-up__failure {
   padding-top: 43px;

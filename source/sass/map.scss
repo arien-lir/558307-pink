@@ -1,5 +1,18 @@
 .map {
-  min-width: 318px;
+  min-width: 320px;
   background-color: #eae6dd;
+  background-size: cover;
   font-family: $opensans;
+  margin: 0 auto;
+}
+@media (min-width: $tablet-width) {
+  .map {
+  min-width: 660px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .map {
+  min-width: 1200px;
+  max-width: 1200px;
+  }
 }

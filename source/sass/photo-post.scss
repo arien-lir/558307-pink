@@ -2,6 +2,7 @@
   min-width: 320px;
   background-color: #f2f2f2;
   font-family: $opensans;
+  margin: 0 auto;
 }
 .photo-post__call-to-action {
   background-color: #ffffff;
@@ -54,6 +55,7 @@
 @media (min-width: $desktop-width) {
   .photo-post {
     min-width: 1200px;
+    max-width: 1200px;
   }
   .photo-post__button-wrapper {
     flex-direction: row;

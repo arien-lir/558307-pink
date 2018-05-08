@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .download__wrapper {
   display: flex;
@@ -39,12 +40,15 @@
   padding-right: 45px;
 }
 .download__cover {
-  min-width: 100%;
+  width: 320px;
+  height: 462px;
   background-image: url("../img/main-cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: $dark-blue;
+  position: absolute;
+  top: 0;
 }
 @media (min-width: $tablet-width) {
   .download {
@@ -59,12 +63,24 @@
     padding-top: 38px;
     padding-bottom: 111px;
   }
+  .download__wrapper {
+    z-index: 2;
+  }
+  .download__cover {
+    width: 660px;
+    height: 729px;
+  }
 }
 @media (min-width: $desktop-width) {
   .download {
     min-width: 1200px;
+    max-width: 1200px;
   }
   .download__tagline {
     padding-top: 224px;
+  }
+  .download__cover {
+    width: 1200px;
+    height: 853px;
   }
 }
