@@ -39,6 +39,7 @@ a.button {
   margin-top: 28px;
   padding-top: 11px;
   padding-bottom: 17px;
+  margin: 0 auto;
 }
 @media (min-width: $tablet-width) {
   a.button {
@@ -48,5 +49,12 @@ a.button {
 @media (min-width: $desktop-width) {
   a.button {
     margin-top: 54px;
+  }
+  .button--active {
+    width: 183px;
+    margin-right: 44px;
+  }
+  .button--disable {
+    width: 183px;
   }
 }

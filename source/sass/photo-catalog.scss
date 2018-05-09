@@ -1,28 +1,7 @@
 .photo-catalog {
-  min-width: 320px;
+  width: 320px;
   font-family: $opensans;
   margin: 0 auto;
-}
-.photo-catalog__title {
-  width: 320px;
-  min-height: 237px;
-  background-image: url("../img/inner-cover.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: $dark-blue;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 98px;
-  padding-bottom: 83px;
-  padding-left: 75px;
-  padding-right: 75px;
-  font-size: 24px;
-  font-weight: lighter;
-  color: #ffffff;
-  text-align: center;
-  position: absolute;
-  top: 0;
 }
 .photo-catalog__intro {
   background-color: #ffffff;
@@ -32,6 +11,11 @@
   text-align: center;
   padding-top: 52px;
   padding-bottom:57px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.photo-catalog__intro br {
+  display: none;
 }
 .photo-catalog__item {
   width: 280px;
@@ -52,7 +36,6 @@
   color: $dark-blue;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .photo-catalog__wrapper {
   min-width: 280px;
@@ -75,7 +58,7 @@
   font-weight: lighter;
   margin: 0;
   padding: 0;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 }
 .photo-catalog__likes-number {
   color: #d22856;
@@ -101,10 +84,11 @@
 }
 @media (min-width: $tablet-width) {
   .photo-catalog {
-    min-width: 660px;
+    width: 660px;
   }
   .photo-catalog__item {
     width: 300px;
+    margin-left: 20px;
   }
   .photo-catalog__quote {
     height: 155px;
@@ -114,8 +98,10 @@
     justify-content: space-between;
   }
   .photo-catalog__main-quote {
+    display: block;
     width: 620px;
     height: 121px;
+    margin: 0 auto;
   }
   .photo-catalog__like {
     display: flex;
@@ -128,14 +114,11 @@
     flex-direction: row;
     justify-content: space-between;
     order: 1;
-    margin-bottom: 28px;
   }
   .photo-catalog__intro {
     font-size: 18px;
-  }
-  .photo-catalog__title {
-    width: 660px;
-    font-size: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .photo-catalog__list {
     display: flex;
@@ -148,16 +131,27 @@
   .photo-catalog__info:nth-child(3) {
     order: 3;
   }
+  .photo-catalog__main-quote .photo-catalog__text {
+    padding-bottom: 27px;
+  }
 }
 @media (min-width: $desktop-width) {
   .photo-catalog {
-    min-width: 1200px;
+    width: 1200px;
     max-width: 1200px;
+    margin-left: 130px;
   }
   .photo-catalog__main-quote {
     width: 940px;
   }
-  .photo-catalog__title {
-    width: 1200px;
+  .photo-catalog__intro {
+    padding-left: 100px;
+    padding-right: 315px;
+  }
+  .photo-catalog__intro br {
+    display: block;
+  }
+  .photo-catalog__item {
+    margin-right: 0;
   }
 }
