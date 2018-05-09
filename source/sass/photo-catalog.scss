@@ -4,20 +4,25 @@
   margin: 0 auto;
 }
 .photo-catalog__title {
+  width: 320px;
   min-height: 237px;
   background-image: url("../img/inner-cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: $dark-blue;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 98px;
   padding-bottom: 83px;
+  padding-left: 75px;
+  padding-right: 75px;
   font-size: 24px;
   font-weight: lighter;
   color: #ffffff;
   text-align: center;
+  position: absolute;
+  top: 0;
 }
 .photo-catalog__intro {
   background-color: #ffffff;
@@ -31,6 +36,7 @@
 .photo-catalog__item {
   width: 280px;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 .photo-catalog__quote {
   background-color: #f2f2f2;
@@ -39,6 +45,7 @@
   padding-bottom: 26px;
   padding-top: 22px;
   padding-left: 18px;
+  padding-right: 22px;
   margin-bottom: 20px;
   font-size: 12px;
   line-height: 24px;
@@ -52,12 +59,15 @@
   min-height: 180px;
 }
 .photo-catalog__author {
+  display: inline-block;
   margin: 0;
   padding: 0;
   font-weight: bold;
+  padding-right: 4px;
   padding-bottom: 9px;
 }
 .photo-catalog__time {
+  display: inline-block;
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -76,6 +86,10 @@
   display: flex;
   flex-direction: column;
 }
+.photo-catalog__info {
+  display: flex;
+  flex-direction: row;
+}
 .photo-catalog__info:first-child {
   order: 1;
 }
@@ -92,18 +106,16 @@
   .photo-catalog__item {
     width: 300px;
   }
+  .photo-catalog__quote {
+    height: 155px;
+  }
   .photo-catalog__info-wrapper {
     flex-direction: row;
     justify-content: space-between;
   }
   .photo-catalog__main-quote {
     width: 620px;
-  }
-  .photo-catalog__author {
-    display: inline-block;
-  }
-  .photo-catalog__time {
-    display: inline-block;
+    height: 121px;
   }
   .photo-catalog__like {
     display: flex;
@@ -116,11 +128,13 @@
     flex-direction: row;
     justify-content: space-between;
     order: 1;
+    margin-bottom: 28px;
   }
   .photo-catalog__intro {
     font-size: 18px;
   }
   .photo-catalog__title {
+    width: 660px;
     font-size: 50px;
   }
   .photo-catalog__list {
@@ -142,5 +156,8 @@
   }
   .photo-catalog__main-quote {
     width: 940px;
+  }
+  .photo-catalog__title {
+    width: 1200px;
   }
 }

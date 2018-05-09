@@ -1,21 +1,22 @@
 .download {
   min-width: 320px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: $dark-blue;
-  font-family: $opensans;
-  color: #ffffff;
-  font-weight: lighter;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
 }
 .download__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: $opensans;
+  color: #ffffff;
+  font-weight: lighter;
+  display: block;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  padding-top: 325px;
+  text-align: center;
+  margin: 0 auto;
 }
 .download__tagline {
   padding: 0;
@@ -26,9 +27,10 @@
 .download__link {
   padding: 0;
   margin: 0;
+  padding-left: 35px;
+  padding-right: 35px;
   border-color: #ffffff;
   font-size: 18px;
-  line-height: 32px;
   font-weight: bold;
 }
 .download__text {
@@ -39,36 +41,28 @@
   padding-left: 45px;
   padding-right: 45px;
 }
-.download__cover {
-  width: 320px;
-  height: 462px;
-  background-image: url("../img/main-cover.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: $dark-blue;
-  position: absolute;
-  top: 0;
-}
 @media (min-width: $tablet-width) {
   .download {
     min-width: 660px;
-    flex-direction: row-reverse;
+  }
+  .download__wrapper {
+    width: 300px;
+    padding-top: 0;
+    margin-right: 340px;
+    background-position: 50% 100%;
   }
   .download__tagline {
     display: block;
     padding-top: 97px;
+    padding-bottom: 32px;
+    padding-left: 59px;
+    padding-right: 56px;
   }
   .download__text {
     padding-top: 38px;
     padding-bottom: 111px;
-  }
-  .download__wrapper {
-    z-index: 2;
-  }
-  .download__cover {
-    width: 660px;
-    height: 729px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -76,11 +70,10 @@
     min-width: 1200px;
     max-width: 1200px;
   }
+  .download__wrapper {
+    margin-right: 770px;
+  }
   .download__tagline {
     padding-top: 224px;
-  }
-  .download__cover {
-    width: 1200px;
-    height: 853px;
   }
 }
