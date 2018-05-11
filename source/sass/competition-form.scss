@@ -239,6 +239,7 @@
     width: 938px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     flex-wrap: wrap;
   }
   .competition-form__fieldset:nth-child(3),
@@ -260,8 +261,10 @@
   .competition-form__fieldset:nth-child(2) {
     height: 230px;
   }
+  .competition-form__fieldset:nth-child(4) {
+    height: 300px;
+  }
   .competition-form__wrapper {
-    flex-grow: 1;
     margin: 0 auto;
     padding: 0;
   }
@@ -275,13 +278,9 @@
     width: 817px;
     height: 125px;
   }
-  .competition-form__app {
-  }
-  .competition-form__app:last-child {
-  }
   .competition-form__info {
     padding: 0;
-    padding-top: 53px;
+    padding-top: 40px;
   }
   .competition-form__contacts {
     display: flex;
