@@ -14,9 +14,13 @@
   display: block;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: 0 20%;
   padding-top: 325px;
   text-align: center;
   margin: 0 auto;
+}
+.download__summery {
+  background-color: $dark-blue;
 }
 .download__tagline {
   padding: 0;
