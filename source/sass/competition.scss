@@ -1,6 +1,6 @@
 .competition__title {
   min-width: 320px;
-  background-image: url("../img/inner-cover.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,11 +9,13 @@
   font-family: $opensans;
   font-size: 24px;
   font-weight: lighter;
+  text-align: center;
   margin: 0 auto;
   padding: 0;
-  padding-top: 99px;
-  padding-bottom: 55px;
-  text-align: center;
+  padding-top: 98px;
+  padding-bottom: 53px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 p.competition__description {
   background-color: #ffffff;
@@ -25,7 +27,7 @@ p.competition__description {
   margin: 0;
   padding: 0;
   padding-top: 52px;
-  padding-bottom: 49px;
+  padding-bottom: 9px;
   padding-left: 25px;
   padding-right: 25px;
   text-align: center;
@@ -38,14 +40,17 @@ p.competition__description {
 @media (min-width: $tablet-width) {
   .competition__title {
     min-width: 660px;
+    font-size: 50px;
+    padding-bottom: 80px;
     padding-left: 90px;
     padding-right: 90px;
   }
   p.competition__description {
+    font-size: 18px;
     padding-top: 97px;
-    padding-bottom: 76px;
-    padding-left: 86px;
-    padding-right: 86px;
+    padding-bottom: 0;
+    padding-left: 90px;
+    padding-right: 90px;
     text-align: center;
   }
   .competition__description span {
@@ -62,5 +67,6 @@ p.competition__description {
   p.competition__description {
     padding-left: 220px;
     padding-right: 220px;
+    padding-bottom: 77px;
   }
 }
