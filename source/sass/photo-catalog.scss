@@ -93,6 +93,9 @@
   .photo-catalog__quote {
     height: 155px;
   }
+  .photo-catalog__text {
+    height: 55px;
+  }
   .photo-catalog__info-wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -153,5 +156,8 @@
   }
   .photo-catalog__item {
     margin-right: 0;
+  }
+  .photo-catalog__text {
+    height: 60px;
   }
 }
