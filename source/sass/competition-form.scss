@@ -66,6 +66,7 @@
   padding: 0;
   margin: 0;
   padding-left: 22px;
+  line-height: 40px;
 }
 .competition-form__title {
   font-size: 14px;
@@ -109,14 +110,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+  padding: 0;
 }
 .competition-form__prompt {
   background-color: #ffffff;
   font-size: 14px;
   color: $dark-blue;
   text-transform: uppercase;
-  padding-top: 43px;
-  padding-bottom: 21px;
+  padding: 0;
+  margin: 0;
+  margin-top: 43px;
+  margin-bottom: 21px;
 }
 .competition-form__prompt span {
   color: #d22856;
@@ -195,9 +200,10 @@
   .competition-form__wrapper {
     order: 6;
     flex-direction: row;
-    width: 635px;
+    width: 620px;
     justify-content: space-between;
     align-items: baseline;
+    margin-left: 22px;
   }
   .competition-form__comments {
     padding-top: 38px;
@@ -226,8 +232,8 @@
     padding-left: 22px;
   }
   .competition-form__prompt {
-    padding-top: 94px;
-    padding-left: 135px;
+    margin-top: 69px;
+    margin-left: 135px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -239,7 +245,6 @@
     width: 938px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
     flex-wrap: wrap;
   }
   .competition-form__fieldset:nth-child(3),
@@ -261,12 +266,8 @@
   .competition-form__fieldset:nth-child(2) {
     height: 230px;
   }
-  .competition-form__fieldset:nth-child(4) {
-    height: 300px;
-  }
   .competition-form__wrapper {
-    margin: 0 auto;
-    padding: 0;
+    width: 1200px;
   }
   .competition-form__info input {
     width: 339px;
@@ -279,8 +280,13 @@
     height: 125px;
   }
   .competition-form__info {
+    margin: 0;
     padding: 0;
-    padding-top: 40px;
+    padding-bottom: 44px;
+  }
+  .competition-form__info--patronymic {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .competition-form__contacts {
     display: flex;
