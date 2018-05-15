@@ -110,7 +110,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
   padding: 0;
 }
 .competition-form__prompt {
@@ -200,10 +199,8 @@
   .competition-form__wrapper {
     order: 6;
     flex-direction: row;
-    width: 620px;
     justify-content: space-between;
     align-items: baseline;
-    margin-left: 22px;
   }
   .competition-form__comments {
     padding-top: 38px;
@@ -233,7 +230,7 @@
   }
   .competition-form__prompt {
     margin-top: 69px;
-    margin-left: 135px;
+    margin-right: 22px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -310,5 +307,8 @@
   }
   .competition-form__checkbox-item {
     width: 310px;
+  }
+  .competition-form__prompt {
+    margin-right: 0;
   }
 }

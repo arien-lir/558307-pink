@@ -23,6 +23,8 @@
   line-height: 30px;
   font-weight: lighter;
   color: #000000;
+  padding: 0;
+  margin: 0;
 }
 .reviews__info {
   display: flex;
@@ -34,12 +36,20 @@
   line-height: 30px;
   font-weight: lighter;
   color: $dark-blue;
-  padding-bottom: 38px;
+  padding: 0;
+  padding-top: 16px;
+  margin: 0;
 }
 .reviews__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.reviews__toggles {
+  padding: 0;
+  margin: 0 auto;
 }
 @media (min-width: $tablet-width) {
   .reviews {
