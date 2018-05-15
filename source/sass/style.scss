@@ -1,38 +1,27 @@
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 @import "variable.scss";
 @import "advantages.scss";
 @import "button.scss";
+@import "body.scss";
 @import "competition-form.scss";
 @import "competition.scss";
 @import "contacts.scss";
 @import "copyright.scss";
-@import "cover.scss";
 @import "main-navigation.scss";
+@import "index-page-footer.scss";
 @import "map.scss";
 @import "download.scss";
 @import "footer.scss";
 @import "header.scss";
 @import "panorama-wrapper.scss";
 @import "photo-catalog.scss";
+@import "photo__title.scss";
 @import "photo-post.scss";
 @import "pop-up.scss";
+@import "research.scss";
 @import "reviews.scss";
+@import "scaffolding.scss";
 @import "site-list.scss";
 @import "social.scss";
 @import "tagline.scss";
 @import "tariff.scss";
+@import "html.scss";

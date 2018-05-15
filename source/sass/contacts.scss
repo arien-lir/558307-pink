@@ -1,7 +1,13 @@
 .contacts {
-  min-width: 318px;
+  min-width: 320px;
   background-color: #ffffff;
   font-family: $opensans;
+  margin: 0 auto;
+}
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .contacts__call-to-action {
   color: $dark-blue;
@@ -26,4 +32,39 @@ span.contacts__info {
   color: #d22856;
   font-size: 24px;
   font-weight: lighter;
+}
+@media (min-width: $tablet-width) {
+  .contacts {
+    min-width: 660px;
+  }
+  .contacts__info {
+    display: block;
+    width: 330px;
+    text-align: center;
+  }
+  .contacts__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: $desktop-width) {
+  .contacts {
+    min-width: 1200px;
+    max-width: 1200px;
+  }
+  .contacts__info {
+    width: 400px;
+  }
+  .contacts__info:first-child {
+    order: 1;
+    padding-right: 18px;
+  }
+  .contacts__info:last-child {
+    order: 2;
+    text-align: center;
+  }
+  .contacts__info:nth-child(2) {
+    order: 3;
+    text-align: center;
+  }
 }

@@ -1,26 +1,95 @@
 .download {
-  min-width: 100%;
+  min-width: 320px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: $dark-blue;
+  margin: 0 auto;
+}
+.download__wrapper {
+  display: block;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 20%;
+  margin: 0;
+  padding-top: 325px;
+}
+.download__summary {
+  background-color: $dark-blue;
+  padding-top: 55px;
   font-family: $opensans;
   color: #ffffff;
+  font-weight: lighter;
   text-align: center;
+  width: 320px;
+}
+.download__tagline {
+  padding: 0;
+  margin: 0;
+  display: none;
+  font-size: 40px;
 }
 .download__link {
+  padding: 0;
+  margin: 0;
+  padding-left: 35px;
+  padding-right: 35px;
   border-color: #ffffff;
   font-size: 18px;
-  line-height: 32px;
   font-weight: bold;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 39px;
-  padding-right: 39px;
+}
+a.download__link {
+  display: block;
 }
 .download__text {
   font-size: 14px;
   line-height: 24px;
-  font-weight: lighter;
   padding-top: 26px;
   padding-bottom: 34px;
   padding-left: 45px;
   padding-right: 45px;
+}
+@media (min-width: $tablet-width) {
+  .download {
+    min-width: 660px;
+  }
+  .download__wrapper {
+    padding: 0;
+    background-position: 50% 100%;
+  }
+  .download__tagline {
+    display: block;
+    padding-top: 97px;
+    padding-bottom: 32px;
+    padding-left: 59px;
+    padding-right: 56px;
+  }
+  .download__text {
+    padding-top: 38px;
+    padding-bottom: 111px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .download__summary {
+    background-color: transparent;
+    width: 300px;
+    padding: 0;
+    margin-left: 20px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .download {
+    min-width: 1200px;
+    max-width: 1200px;
+  }
+  .download__tagline {
+    padding-top: 224px;
+  }
+  .download__summary {
+    margin-left: 130px;
+  }
+  .download__wrapper {
+    background-position: 70% 100%;
+  }
 }
